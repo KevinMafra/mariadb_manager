@@ -1,0 +1,7 @@
+[Console]::OutputEncoding = [System.Text.Encondig]::UTF8;
+Get-NetTCPConnection -State Listen -OwningProcess id;
+
+$variavel
+
+powershell.exe -NoProfile -Command "comando a ser executado"
+Get-Process mariadb -ErrorAction -SilentlyError

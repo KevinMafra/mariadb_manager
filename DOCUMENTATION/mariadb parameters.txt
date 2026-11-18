@@ -1,0 +1,17 @@
+mysql_install_db.exe - Primeira e única inicialização (sem definição de senha);
+mysql_install_db.exe --password=11082307 - Primeira e única inicialização já com senha definida;
+
+mariadb.exe -u root - Conexão root (método 1);
+mysql.exe -u root - Conexão root (método 2);
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY '11082307' - Alterar senha ROOT;
+
+EXIT; - Para sair do mariadb;
+
+mariadb.exe -u root -p11082307 - Conexão root agora precisa do parâmetro -pSenha;
+
+mysql_upgrade.exe - Para verificar e atualizar a instalação do banco de dados;
+
+mariadb-check -u root -p11082307 - Comando para verificar o banco com os direitos de root;
+
+mariadb-admin -u root -p11082307 - Comando para executar parâmetros root (exemplo, shutdown);
